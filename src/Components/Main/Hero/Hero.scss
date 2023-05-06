@@ -1,0 +1,54 @@
+@import "./../../../styles/mixins";
+@import "./../../../styles/variables";
+
+.section-hero {
+  .container{
+    @include flex(space-between, center);
+
+    .section-hero-info{
+      flex-basis: 40%;
+
+      .section-hero-tittle{
+        font-size: $fz-xxl;
+        line-height: $lh-xxl;
+        font-weight: 700;
+        font-family: 'Philosopher', sans-serif;
+      }
+
+      .section-hero-text{
+        margin-top: clamp(20px, calc(32 / 1400 *100vw), 32px);
+        font-weight: 500;
+        opacity: 0.7;
+      }
+
+      .section-hero-btns{
+        @include flex( flex-start, center, 30px);
+        margin-top: clamp(20px, calc(32 / 1400 *100vw), 32px);
+      }
+    }
+
+    .section-hero-img-wrapper{
+      //width: 100%;
+      flex-basis: 60%;
+      .section-hero-img{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-hero {
+    .container {
+      flex-direction: column;
+
+      .section-hero-img-wrapper {
+        .section-hero-img {
+          height: 300px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

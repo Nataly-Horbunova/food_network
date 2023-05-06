@@ -40,11 +40,11 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
-  padding: 0 clamp(16px, 5.8139534884vw, 100px);
+  max-width: 1400px;
+  padding: 0 clamp(16px, 7.1428571429vw, 100px);
 }
 
-p, h1, h2 {
+p, h1, h2, h3, h4, h5 {
   margin: 0;
 }
 

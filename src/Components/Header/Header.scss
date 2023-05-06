@@ -6,9 +6,13 @@
   top: 0;
   left: 0;
   right: 0;
-  @include flex(space-between, center, 30px);
-  padding-top: 30px;
   z-index: 100;
+  padding: 20px 0;
+  background-color: transparentize($secondary-text-color, 0.1);
+
+  .container{
+    @include flex(space-between, center, 30px);
+  }
 
   .logo-and-nav-wrapper {
     @include flex(space-between, center, 30px);
@@ -28,7 +32,7 @@
         display: none;
         position: fixed;
         left: 0;
-        top: clamp(76px, calc(82 / 1300 * 100vw), 82px);
+        top: clamp(76px, calc(82 / 1400 * 100vw), 82px);
         width: 100vw;
         height: 100vh;
         background-color: transparentize($secondary-color, 0.3);
@@ -81,7 +85,7 @@
           left: 0;
           flex-direction: column;
           gap: 10px;
-          background-color: transparentize($secondary-text-color, 0.2);
+          background-color: transparentize($secondary-text-color, 0.1);
           padding: 30px;
           z-index: 3;
           min-width: 320px;
@@ -91,7 +95,7 @@
 
         &-list.active {
           display: flex;
-          transform: translateY(clamp(76px, calc(82 / 1300 * 100vw), 82px));
+          transform: translateY(clamp(76px, calc(82 / 1400 * 100vw), 82px));
         }
       }
     }

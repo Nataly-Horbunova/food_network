@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.section-heading {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: $fz-xl;
+  line-height: $lh-xl;
+  text-transform: capitalize;
+  color: $main-text-color;
+}

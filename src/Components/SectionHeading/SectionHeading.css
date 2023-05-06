@@ -1,0 +1,10 @@
+.section-heading {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: clamp(26px, 2.2857142857vw, 32px);
+  line-height: clamp(30px, 2.5714285714vw, 36px);
+  text-transform: capitalize;
+  color: #150C01;
+}
+
+/*# sourceMappingURL=SectionHeading.css.map */

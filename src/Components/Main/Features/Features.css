@@ -1,0 +1,34 @@
+.section-features {
+  margin-bottom: 50px;
+}
+.section-features .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.section-features .container .section-heading {
+  margin-top: 10px;
+}
+.section-features .container .section-features-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  margin-top: clamp(24px, 2.8571428571vw, 408px);
+}
+.section-features .container .section-features-cards .features-card-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-features .container .section-features-cards .features-card-item .features-card-img-wrapper img {
+  display: block;
+  width: 42px;
+  height: auto;
+}
+
+/*# sourceMappingURL=Features.css.map */

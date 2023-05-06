@@ -5,7 +5,19 @@ $main-text-color: #150C01;
 $secondary-text-color: #fff;
 
 
-$fz-s: clamp(14px, calc(16 / 1300 *100vw), 16px);
+$fz-xxs: clamp(10px, calc(12 / 1400 *100vw), 12px);
+$fz-xs: clamp(12px, calc(14 / 1400 *100vw), 14px);
+$fz-s: clamp(14px, calc(16 / 1400 *100vw), 16px);
+$fz-m: clamp(16px, calc(18 / 1400 *100vw), 18px);
+$fz-l: clamp(20px, calc(24 / 1400 *100vw), 24px);
+$fz-xl: clamp(26px, calc(32 / 1400 *100vw), 32px);
+$fz-xxl: clamp(36px, calc(48 / 1400 *100vw), 48px);
 
 
-$lh-s: clamp(18px, calc(24 / 1300 *100vw), 24px);
+$lh-xxs: clamp(14px, calc(16 / 1400 *100vw), 16px);
+$lh-xs: clamp(16px, calc(20 / 1400 *100vw), 20px);
+$lh-s: clamp(18px, calc(22 / 1400 *100vw), 22px);
+$lh-m: clamp(20px, calc(24 / 1400 *100vw), 24px);
+$lh-l: clamp(24px, calc(28 / 1400 *100vw), 28px);
+$lh-xl: clamp(30px, calc(36 / 1400 *100vw), 36px);
+$lh-xxl: clamp(46px, calc(58 / 1400 *100vw), 58px);

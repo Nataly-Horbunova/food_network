@@ -1,12 +1,12 @@
 import HeaderNavItem from './HeaderNavItem';
-import navMenu from './../../data/constants';
+import {navMenu} from '../../data/constants';
 
 const HeaderNavList = () => {
     return (
         <ul className="header-nav-list">
             {
-                navMenu.map(text => {
-                    return <HeaderNavItem text={text} key={crypto.randomUUID()}/>
+                navMenu.map(item => {
+                    return <HeaderNavItem text={item.name} key={item.id}/>
                 })
             }
         </ul>
