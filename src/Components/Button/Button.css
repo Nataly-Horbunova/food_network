@@ -3,6 +3,7 @@
   padding: 14px 30px;
   border-radius: 5px;
   font-size: clamp(14px, 1.2307692308vw, 16px);
+  line-height: clamp(18px, 1.8461538462vw, 24px);
 }
 
 .btn.btn-filled {

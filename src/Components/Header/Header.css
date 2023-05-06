@@ -1,9 +1,14 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
+  z-index: 100;
 }
 .header .logo-and-nav-wrapper {
   display: flex;
@@ -18,6 +23,19 @@
   display: block;
   width: 44px;
   height: auto;
+}
+.header .logo-and-nav-wrapper .header-nav .menu-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: clamp(76px, 6.3076923077vw, 82px);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(251, 241, 231, 0.7);
+  z-index: 2;
+}
+.header .logo-and-nav-wrapper .header-nav .menu-overlay.active {
+  display: block;
 }
 .header .logo-and-nav-wrapper .header-nav svg {
   display: none;
@@ -46,7 +64,21 @@
     display: block;
   }
   .header .logo-and-nav-wrapper .header-nav-list {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    z-index: 3;
+    min-width: 320px;
+    transition: 0.5s;
+    transform: translateY(-100%);
+  }
+  .header .logo-and-nav-wrapper .header-nav-list.active {
+    display: flex;
+    transform: translateY(clamp(76px, 6.3076923077vw, 82px));
   }
 }
 
