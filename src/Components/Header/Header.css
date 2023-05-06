@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.header .logo-and-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header .logo-and-nav-wrapper .logo {
+  display: block;
+}
+.header .logo-and-nav-wrapper .logo img {
+  display: block;
+  width: 44px;
+  height: auto;
+}
+.header .logo-and-nav-wrapper .header-nav svg {
+  display: none;
+  width: 24px;
+}
+.header .logo-and-nav-wrapper .header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header .logo-and-nav-wrapper .header-nav-list .header-nav-item a {
+  color: inherit;
+  transition: 0.2s ease-in;
+}
+.header .logo-and-nav-wrapper .header-nav-list .header-nav-item a:hover {
+  transform: scale(1.01);
+  color: #DC780B;
+}
+.header .logo-and-nav-wrapper .header-nav-list .header-nav-item:first-child a {
+  color: #DC780B;
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo-and-nav-wrapper .header-nav svg {
+    display: block;
+  }
+  .header .logo-and-nav-wrapper .header-nav-list {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

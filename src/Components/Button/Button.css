@@ -1,0 +1,19 @@
+.btn {
+  border: none;
+  padding: 14px 30px;
+  border-radius: 5px;
+  font-size: clamp(14px, 1.2307692308vw, 16px);
+}
+
+.btn.btn-filled {
+  background-color: #DC780B;
+  color: #fff;
+}
+
+.btn.btn-outlined {
+  background-color: #fff;
+  color: #DC780B;
+  border: 1.5px solid #DC780B;
+}
+
+/*# sourceMappingURL=Button.css.map */
