@@ -1,12 +1,13 @@
-import HeaderNavItem from './HeaderNavItem';
-import {navMenu} from '../../data/constants';
-
-const HeaderNavList = () => {
+const HeaderNavList = ({navList}) => {
     return (
         <ul className="header-nav-list">
             {
-                navMenu.map(item => {
-                    return <HeaderNavItem text={item.name} key={item.id}/>
+                navList.map(item => {
+                    return (
+                        <li className="header-nav-item" key={item.id}>
+                            <a href="#" className="header-nav-link">{item.name} </a>
+                        </li>
+                    )
                 })
             }
         </ul>

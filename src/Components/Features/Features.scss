@@ -1,7 +1,8 @@
-@import "../../../styles/mixins";
-@import "../../../styles/variables";
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 .section-features{
+  margin-top: 40px;
   margin-bottom: 50px;
   .container {
     @include flex(space-between, center, null, column);
@@ -19,12 +20,11 @@
         @include flex(flex-start, center, 10px, column);
 
         .features-card-img-wrapper{
-          //width: 100%;
+          width: 42px;
 
           img{
             display: block;
-            width: 42px;
-            height: auto;
+            width: 100%;
           }
         }
       }

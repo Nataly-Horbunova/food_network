@@ -1,0 +1,57 @@
+@import './../styles/variables';
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 5px;
+  font-size: $fz-s;
+  line-height: $lh-s;
+  border: 1.5px solid $main-color;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+
+.btn.btn-filled {
+  background-color: $main-color;
+  color: $secondary-text-color;
+
+  &:hover {
+    background-color: $secondary-text-color;
+    color: $main-color;
+    transform: scale(1.03);
+  }
+}
+
+.btn.btn-outlined {
+  background-color: $secondary-text-color;
+  color: $main-color;
+
+  &:hover {
+    background-color: $main-color;
+    color: $secondary-text-color;
+    transform: scale(1.03);
+  }
+}
+
+.section-heading {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: $fz-xl;
+  line-height: $lh-xl;
+  text-transform: capitalize;
+  color: $main-text-color;
+}
+
+
+.section-name{
+  font-size: $fz-s;
+  line-height: $lh-s;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $main-color;
+  opacity: 0.7;
+}
+
+.main {
+  margin-top: 90px;
+}

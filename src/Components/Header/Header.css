@@ -68,7 +68,7 @@
   }
   .header .logo-and-nav-wrapper .header-nav-list {
     position: absolute;
-    top: 0;
+    top: clamp(76px, 5.8571428571vw, 82px);
     left: 0;
     flex-direction: column;
     gap: 10px;
@@ -77,11 +77,11 @@
     z-index: 3;
     min-width: 320px;
     transition: 0.5s;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
   }
   .header .logo-and-nav-wrapper .header-nav-list.active {
     display: flex;
-    transform: translateY(clamp(76px, 5.8571428571vw, 82px));
+    transform: translateX(0);
   }
 }
 

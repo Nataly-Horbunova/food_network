@@ -81,7 +81,7 @@
 
         &-list {
           position: absolute;
-          top: 0;
+          top: clamp(76px, calc(82 / 1400 * 100vw), 82px);
           left: 0;
           flex-direction: column;
           gap: 10px;
@@ -90,12 +90,12 @@
           z-index: 3;
           min-width: 320px;
           transition: 0.5s;
-          transform: translateY(-100%);
+          transform: translateX(-100%);
         }
 
         &-list.active {
           display: flex;
-          transform: translateY(clamp(76px, calc(82 / 1400 * 100vw), 82px));
+          transform: translateX(0);
         }
       }
     }
