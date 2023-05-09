@@ -1,0 +1,125 @@
+@import "../../styles/variables";
+@import "../../styles/mixins_and_placeholders";
+
+.section-menu {
+  margin-top: -20px;
+  padding-top: 90px;
+
+  .container {
+    @include flex(space-between, center, null, column);
+
+    .section-heading {
+      margin-top: 10px;
+    }
+
+    .section-menu-text {
+      max-width: 700px;
+      opacity: 0.8;
+      text-align: center;
+      margin-top: clamp(24px, calc(40 / 1400 * 100vw), 40px);
+    }
+
+    .section-menu-card-list {
+      @include flex(space-between, stretch, 30px);
+      flex-wrap: wrap;
+      margin-top: clamp(30px, calc(50 / 1400 * 100vw), 50px);
+
+      .menu-card-item {
+        flex-basis: 320px;
+        flex-grow: 1;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 100px 16px 16px 16px;
+        transition: 0.2s ease-in;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+
+        .menu-card-img-wrapper {
+          width: 100%;
+          overflow: hidden;
+          border-radius: 100px 16px 100px 16px;
+
+          img {
+            display: block;
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+          }
+        }
+
+        .menu-card-description {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-template-areas:
+                  'tittle price'
+                  'description description'
+                  'button rating';
+          grid-gap: 10px;
+          padding: 24px;
+
+          .menu-card-tittle {
+            grid-area: tittle;
+            @extend %card-tittle;
+          }
+
+          .menu-card-price {
+            grid-area: price;
+            justify-self: flex-end;
+            @extend %card-tittle;
+          }
+
+          .menu-card-text {
+            grid-area: description;
+            opacity: 0.8;
+          }
+
+          .menu-card-add-btn {
+            grid-area: button;
+            justify-self: flex-start;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: $secondary-text-color;
+            background-color: $main-color;
+            padding: 10px 16px;
+            border: 2px solid $main-color;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+
+            &:hover {
+              color: $main-color;
+              background-color: $secondary-text-color;
+              transform: scale(1.04);
+            }
+
+          }
+
+          .menu-card-rating {
+            grid-area: rating;
+            justify-self: flex-end;
+            @include flex(flex-start, center);
+
+            .star {
+              transition: 0.2s ease-in;
+
+              &:hover{
+                transform: scale(1.15);
+              }
+            }
+          }
+
+
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 40px;
+    }
+
+
+  }
+
+}

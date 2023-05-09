@@ -28,16 +28,7 @@
   transform: scale(1.03);
 }
 
-.section-heading {
-  font-family: "Philosopher", sans-serif;
-  font-weight: 700;
-  font-size: clamp(26px, 2.2857142857vw, 32px);
-  line-height: clamp(30px, 2.5714285714vw, 36px);
-  text-transform: capitalize;
-  color: #150C01;
-}
-
-.section-name {
+.section-tittle {
   font-size: clamp(14px, 1.1428571429vw, 16px);
   line-height: clamp(18px, 1.5714285714vw, 22px);
   font-weight: 500;
@@ -45,6 +36,17 @@
   text-transform: uppercase;
   color: #DC780B;
   opacity: 0.7;
+  text-align: center;
+}
+
+.section-heading {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: clamp(26px, 2.2857142857vw, 32px);
+  line-height: clamp(30px, 2.5714285714vw, 36px);
+  text-transform: capitalize;
+  color: #150C01;
+  text-align: center;
 }
 
 .main {

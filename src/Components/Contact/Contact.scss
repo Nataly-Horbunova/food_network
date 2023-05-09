@@ -1,0 +1,74 @@
+@import './../../styles/variables';
+@import '../../styles/mixins_and_placeholders';
+
+
+.section-contacts {
+  margin-top: -20px;
+  padding-top: 90px;
+
+  .container {
+    @include flex(space-between, flex-start, 40px);
+
+
+    .contact-map {
+      flex-basis: 40%;
+      flex-grow: 1;
+      height: 300px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .contact-form {
+      flex-basis: 60%;
+      flex-grow: 1;
+
+      .section-heading {
+        margin-top: 10px;
+      }
+
+      .input-wrapper {
+        @include flex(space-between, center);
+        margin-top: clamp(24px, calc(40 / 1400 * 100vw), 40px);
+        background-color: $secondary-text-color;
+        border: 1.5px solid $main-color;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .contact-input-email {
+          @extend %inputText;
+          border: none;
+          background-color: $secondary-text-color;
+          padding: 14px 30px;
+          width: 100%;
+
+          &::placeholder {
+            @extend %inputText;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .btn {
+          &:hover {
+            transform: scale(1);
+            background-color: transparentize($main-color, 0.3);
+            border: 1.5px solid transparentize($main-color, 0.3);
+            color: $secondary-text-color;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-contacts {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+}

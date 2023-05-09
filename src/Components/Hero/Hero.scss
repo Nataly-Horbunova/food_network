@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@import "../../styles/mixins_and_placeholders";
 @import "../../styles/variables";
 
 .section-hero {
@@ -28,8 +28,8 @@
     }
 
     .section-hero-img-wrapper{
-      //width: 100%;
       flex-basis: 60%;
+
       .section-hero-img{
         display: block;
         width: 100%;
@@ -46,7 +46,7 @@
       .section-hero-img-wrapper {
         .section-hero-img {
           height: 300px;
-          width: auto;
+          object-fit: cover;
         }
       }
     }

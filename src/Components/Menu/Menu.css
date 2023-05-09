@@ -1,0 +1,110 @@
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-price, .section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-tittle {
+  font-family: "Philosopher", sans-serif;
+  font-size: clamp(20px, 1.7142857143vw, 24px);
+  line-height: clamp(24px, 2vw, 28px);
+  font-weight: 700;
+}
+
+.section-menu {
+  margin-top: -20px;
+  padding-top: 90px;
+}
+.section-menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.section-menu .container .section-heading {
+  margin-top: 10px;
+}
+.section-menu .container .section-menu-text {
+  max-width: 700px;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: clamp(24px, 2.8571428571vw, 40px);
+}
+.section-menu .container .section-menu-card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: clamp(30px, 3.5714285714vw, 50px);
+}
+.section-menu .container .section-menu-card-list .menu-card-item {
+  flex-basis: 320px;
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px 16px 16px 16px;
+  transition: 0.2s ease-in;
+}
+.section-menu .container .section-menu-card-list .menu-card-item:hover {
+  transform: scale(1.02);
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100px 16px 100px 16px;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-img-wrapper img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "tittle price" "description description" "button rating";
+  grid-gap: 10px;
+  padding: 24px;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-tittle {
+  grid-area: tittle;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-price {
+  grid-area: price;
+  justify-self: flex-end;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-text {
+  grid-area: description;
+  opacity: 0.8;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-add-btn {
+  grid-area: button;
+  justify-self: flex-start;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #DC780B;
+  padding: 10px 16px;
+  border: 2px solid #DC780B;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-add-btn:hover {
+  color: #DC780B;
+  background-color: #fff;
+  transform: scale(1.04);
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-rating {
+  grid-area: rating;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-rating .star {
+  transition: 0.2s ease-in;
+}
+.section-menu .container .section-menu-card-list .menu-card-item .menu-card-description .menu-card-rating .star:hover {
+  transform: scale(1.15);
+}
+.section-menu .container .btn {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=Menu.css.map */

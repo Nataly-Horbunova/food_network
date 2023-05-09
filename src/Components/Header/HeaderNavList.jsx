@@ -5,7 +5,7 @@ const HeaderNavList = ({navList}) => {
                 navList.map(item => {
                     return (
                         <li className="header-nav-item" key={item.id}>
-                            <a href="#" className="header-nav-link">{item.name} </a>
+                            <a href={item.link} className="header-nav-link">{item.name} </a>
                         </li>
                     )
                 })

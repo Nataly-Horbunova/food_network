@@ -1,34 +1,49 @@
-@import "../../styles/mixins";
+@import "../../styles/mixins_and_placeholders";
 @import "../../styles/variables";
 
-.section-features{
-  margin-top: 40px;
-  margin-bottom: 50px;
+.section-features {
+  margin-top: -20;
+  padding-top: 90px;
+
   .container {
     @include flex(space-between, center, null, column);
 
-    .section-heading{
+    .section-heading {
       margin-top: 10px;
     }
 
-    .section-features-cards{
-      @include flex(space-between, flex-start, 16px);
+    .section-features-cards {
+      @include flex(space-between, flex-start, 50px);
+      flex-wrap: wrap;
       align-self: stretch;
-      margin-top: clamp(24px, calc(40 / 1400 *100vw), 408px);
+      margin-top: clamp(24px, calc(40 / 1400 * 100vw), 40px);
 
-      .features-card-item{
+      .features-card-item {
         @include flex(flex-start, center, 10px, column);
+        flex-basis: 280px;
+        flex-grow: 1;
 
-        .features-card-img-wrapper{
-          width: 42px;
+        .features-card-img-wrapper {
+          @include flex(center, center);
+          width: 88px;
+          border-radius: 50%;
+          padding: 20px;
+          background-color: $secondary-color;
 
-          img{
+
+          img {
             display: block;
-            width: 100%;
+            width: 42px;
           }
         }
-      }
 
+        .features-card-text {
+          opacity: 0.8;
+          text-align: center;
+        }
+
+
+      }
     }
   }
 }

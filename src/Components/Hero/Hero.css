@@ -38,7 +38,7 @@
   }
   .section-hero .container .section-hero-img-wrapper .section-hero-img {
     height: 300px;
-    width: auto;
+    object-fit: cover;
   }
 }
 

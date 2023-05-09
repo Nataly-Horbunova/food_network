@@ -1,0 +1,23 @@
+@import "./variables";
+
+@mixin flex($jc:null, $ai:null, $gap:null, $fd: null) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  gap: $gap;
+}
+
+%card-tittle {
+  font-family: 'Philosopher', sans-serif;
+  font-size: $fz-l;
+  line-height: $lh-l;
+  font-weight: 700;
+}
+
+%inputText {
+  opacity: 0.8;
+  font-size: $fz-s;
+  line-height: $lh-s;
+}
+
