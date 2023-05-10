@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/food_network/static/css/main.69f534b0.css",
+    "main.js": "/food_network/static/js/main.7a00b2d2.js",
+    "static/media/peach_melba_dish.png": "/food_network/static/media/peach_melba_dish.b3bd10d0932cc9c71d07.png",
+    "static/media/delmonico_steak_dish.png": "/food_network/static/media/delmonico_steak_dish.eeabc05ded9b6a11e8fa.png",
+    "static/media/golden_chicken.png": "/food_network/static/media/golden_chicken.ca462cbd189fb1701f34.png",
+    "static/media/salads.png": "/food_network/static/media/salads.9058dd7e1eda3e8f922a.png",
+    "static/media/burger.png": "/food_network/static/media/burger.ea428e23917e61db948a.png",
+    "static/media/egg_masala.png": "/food_network/static/media/egg_masala.f39cca99c2fa78390ea6.png",
+    "static/media/about_sec_img.png": "/food_network/static/media/about_sec_img.954edc470bd618b17e99.png",
+    "static/media/client_photo_1.png": "/food_network/static/media/client_photo_1.71a07863dbd788867ac7.png",
+    "static/media/hero-img.png": "/food_network/static/media/hero-img.f9efe8b856e909b31ada.png",
+    "static/media/mobile_app_img.png": "/food_network/static/media/mobile_app_img.62c2e55a9187a3e8de8f.png",
+    "static/media/logo.svg": "/food_network/static/media/logo.9fc4c601102f7c65465c.svg",
+    "static/media/logo.png": "/food_network/static/media/logo.d499465a9f16133854b7.png",
+    "static/media/Roboto-Medium.woff": "/food_network/static/media/Roboto-Medium.cb4b0e5166805233441f.woff",
+    "static/media/Roboto-Regular.woff": "/food_network/static/media/Roboto-Regular.60ef8b89613349a5f44c.woff",
+    "static/media/Roboto-Medium.woff2": "/food_network/static/media/Roboto-Medium.b4bc083c9cd9f27e0ee8.woff2",
+    "static/media/Roboto-Regular.woff2": "/food_network/static/media/Roboto-Regular.6ebf208d23c2f346040d.woff2",
+    "static/media/Philosopher-Regular.woff": "/food_network/static/media/Philosopher-Regular.6ebe4be135c510d046c3.woff",
+    "static/media/Philosopher-Bold.woff": "/food_network/static/media/Philosopher-Bold.a0ea39f09a7466e4b250.woff",
+    "static/media/Philosopher-Regular.woff2": "/food_network/static/media/Philosopher-Regular.565d3400ba6e293fd647.woff2",
+    "static/media/Philosopher-Bold.woff2": "/food_network/static/media/Philosopher-Bold.dc4b4bdebb0742f50120.woff2",
+    "static/media/app_store.svg": "/food_network/static/media/app_store.fb8357dea9780af1cf40.svg",
+    "static/media/instagram.svg": "/food_network/static/media/instagram.ad95de23e4a66967a973.svg",
+    "static/media/twitter.svg": "/food_network/static/media/twitter.70d5544be986680fbc65.svg",
+    "static/media/youtube.svg": "/food_network/static/media/youtube.0f87a6bfe8a89519c39d.svg",
+    "static/media/facebook.svg": "/food_network/static/media/facebook.fd3b9b7816d12c7aeb76.svg",
+    "index.html": "/food_network/index.html",
+    "static/media/star_active.svg": "/food_network/static/media/star_active.f677c5e07a4d68e50c42c1187fd2c993.svg",
+    "static/media/star_disabled.svg": "/food_network/static/media/star_disabled.80d196937fd39310fa014e87fb617c00.svg",
+    "main.69f534b0.css.map": "/food_network/static/css/main.69f534b0.css.map",
+    "main.7a00b2d2.js.map": "/food_network/static/js/main.7a00b2d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69f534b0.css",
+    "static/js/main.7a00b2d2.js"
+  ]
+}
