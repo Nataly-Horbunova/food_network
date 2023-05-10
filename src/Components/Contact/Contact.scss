@@ -69,6 +69,10 @@
   .section-contacts {
     .container {
       flex-direction: column-reverse;
+
+      .contact-map {
+        width: 100%;
+      }
     }
   }
 }

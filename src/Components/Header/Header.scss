@@ -10,7 +10,7 @@
   padding: 20px 0;
   background-color: transparentize($secondary-text-color, 0.1);
 
-  .container{
+  .container {
     @include flex(space-between, center, 30px);
   }
 
@@ -57,8 +57,7 @@
             transition: 0.2s ease-in;
 
             &:hover {
-              transform: scale(1.01);
-              color: $main-color;
+              @extend %menu-hover;
             }
           }
 
@@ -83,6 +82,7 @@
           position: absolute;
           top: clamp(76px, calc(82 / 1400 * 100vw), 82px);
           left: 0;
+          right: 0;
           flex-direction: column;
           gap: 10px;
           background-color: transparentize($secondary-text-color, 0.1);

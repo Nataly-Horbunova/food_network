@@ -1,3 +1,8 @@
+.header .logo-and-nav-wrapper .header-nav-list .header-nav-item a:hover {
+  transform: scale(1.01);
+  color: #DC780B;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -54,10 +59,6 @@
   color: inherit;
   transition: 0.2s ease-in;
 }
-.header .logo-and-nav-wrapper .header-nav-list .header-nav-item a:hover {
-  transform: scale(1.01);
-  color: #DC780B;
-}
 .header .logo-and-nav-wrapper .header-nav-list .header-nav-item:first-child a {
   color: #DC780B;
 }
@@ -70,6 +71,7 @@
     position: absolute;
     top: clamp(76px, 5.8571428571vw, 82px);
     left: 0;
+    right: 0;
     flex-direction: column;
     gap: 10px;
     background-color: rgba(255, 255, 255, 0.9);

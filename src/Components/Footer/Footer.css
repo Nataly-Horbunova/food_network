@@ -1,3 +1,96 @@
+.footer .container .footer-nav .footer-nav-sections-list .footer-nav-section .footer-nav-list .footer-nav-item a:hover, .footer .container .footer-contact-and-logo .footer-email:hover, .footer .container .footer-contact-and-logo .footer-phone:hover {
+  transform: scale(1.01);
+  color: #DC780B;
+}
 
+.footer .container .footer-nav .footer-nav-sections-list .footer-nav-section .footer-nav-list .footer-nav-item a, .footer .container .footer-contact-and-logo .footer-email, .footer .container .footer-contact-and-logo .footer-phone {
+  font-size: clamp(12px, 1vw, 14px);
+  line-height: clamp(16px, 1.4285714286vw, 20px);
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.2s ease-in;
+}
+.footer {
+  margin-top: 70px;
+  background-color: #252525;
+  padding: clamp(40px, 7.8571428571vw, 110px) 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+.footer .container .footer-contact-and-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 35%;
+}
+.footer .container .footer-contact-and-logo .footer-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.footer .container .footer-contact-and-logo .footer-logo img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+.footer .container .footer-contact-and-logo .footer-socials-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footer .container .footer-contact-and-logo .footer-socials-list .footer-socials-item {
+  width: 21px;
+  height: 21px;
+  transition: 0.2s ease-in;
+}
+.footer .container .footer-contact-and-logo .footer-socials-list .footer-socials-item:hover {
+  transform: scale(1.1);
+}
+.footer .container .footer-contact-and-logo .footer-socials-list .footer-socials-item .footer-socials-link, .footer .container .footer-contact-and-logo .footer-socials-list .footer-socials-item .footer-socials-link img {
+  display: block;
+  width: 100%;
+}
+.footer .container .footer-nav {
+  width: 100%;
+  flex-basis: 65%;
+}
+.footer .container .footer-nav .footer-nav-sections-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer .container .footer-nav .footer-nav-sections-list .footer-nav-section .footer-nav-tittle {
+  font-family: "Philosopher", sans-serif;
+  font-size: clamp(16px, 1.2857142857vw, 18px);
+  line-height: clamp(20px, 1.7142857143vw, 24px);
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.7;
+}
+.footer .container .footer-nav .footer-nav-sections-list .footer-nav-section .footer-nav-list {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer .container .footer-nav .footer-nav-sections-list .footer-nav-section .footer-nav-list .footer-nav-item a {
+  transition: 0.2s ease-in;
+}
+@media screen and (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=Footer.css.map */

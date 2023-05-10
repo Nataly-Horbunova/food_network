@@ -4,7 +4,7 @@ const FeaturesList = ({cards}) => {
             {
                 cards.map(card => {
                     return (
-                        <li className="features-card-item" key={card.id}>
+                        <li className="features-card-item" key={card.id} data-aos="zoom-in">
                             <div className="features-card-img-wrapper">
                                 <img src={require(`../../assets/${card.img}`)} alt={card.alt}
                                      className="features-card-img"/>

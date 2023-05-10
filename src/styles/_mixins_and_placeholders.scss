@@ -21,3 +21,19 @@
   line-height: $lh-s;
 }
 
+%menu-hover{
+  transform: scale(1.01);
+  color: $main-color;
+}
+
+%footer{
+  font-size: $fz-xs;
+  line-height: $lh-xs;
+  color: $secondary-text-color;
+  opacity: 0.7;
+  transition: 0.2s ease-in;
+
+  &:hover{
+    @extend %menu-hover;
+  }
+}

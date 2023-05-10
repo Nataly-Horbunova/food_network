@@ -14,14 +14,14 @@ function MenuCard({card}) {
 
 
     return (
-        <li className="menu-card-item">
+        <li className="menu-card-item" data-aos="fade-up" >
             <div className="menu-card-img-wrapper">
                 <img src={require(`../../assets/${card.img}`)} alt={card.tittle}
                      className="menu-card-img"/>
             </div>
             <div className="menu-card-description">
                 <h4 className="menu-card-tittle">{card.tittle}</h4>
-                <p className="menu-card-price">{`${card.price}$`}</p>
+                <p className="menu-card-price" data-aos="zoom-in" data-aos-delay="1000">{`${card.price}$`} </p>
                 <p className="menu-card-text">{card.description}</p>
                 <div className="menu-card-add-btn">+</div>
                 <ul className="menu-card-rating">

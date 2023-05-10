@@ -37,7 +37,6 @@
   flex-grow: 1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px 16px 16px 16px;
-  transition: 0.2s ease-in;
 }
 .section-menu .container .section-menu-card-list .menu-card-item:hover {
   transform: scale(1.02);

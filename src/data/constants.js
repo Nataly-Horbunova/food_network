@@ -5,13 +5,12 @@ export const data = {
             {id: 2, name: 'About us', link: '#about'},
             {id: 3, name: 'Menu', link: '#menu'},
             {id: 4, name: 'Features', link: '#features'},
-            // {id: 5, name: 'Testimonials', link: '#testimonials'},
-            {id: 6, name: 'Contact', link: '#contact'},
+            {id: 5, name: 'Contact', link: '#contact'},
 
         ],
         button: {
-            name: "Booking now",
-            style: "filled"
+            name: "Register / Login",
+            style: "outlined",
         },
         logo: 'logo.svg'
     },
@@ -198,6 +197,70 @@ export const data = {
             style: "filled"
         },
     },
+
+    footer: {
+        logo: 'logo.svg',
+        email: 'food_network@gmail.com',
+        tel: "+38 048 255 25 12",
+        sections: [
+            {
+                id: 1,
+                tittle: 'About us',
+                list: [
+                    {id: 1, name: 'Our Story'},
+                    {id: 2, name: 'Meet the Team'},
+                    {id: 3, name: 'Our Philosophy'},
+                    {id: 4, name: 'Our Mission'},
+                ]
+            },
+            {
+                id: 2,
+                tittle: 'Menu',
+                list: [
+                    {id: 1, name: 'Appetizers'},
+                    {id: 2, name: 'Entrees'},
+                    {id: 3, name: 'Desserts'},
+                    {id: 4, name: 'Beverages'},
+                ]
+            },
+            {
+                id: 3,
+                tittle: 'Order & Delivery',
+                list: [
+                    {id: 1, name: 'Delivery & Pickup'},
+                    {id: 2, name: 'Payment terms'},
+                    {id: 3, name: 'FAQ'},
+                    {id: 4, name: 'Contact Us'},
+                ]
+            },
+        ],
+        socials: [
+            {
+                id: 1,
+                link: 'https://www.instagram.com/',
+                img: 'instagram.svg',
+                alt: 'instagram icon'
+            },
+            {
+                id: 2,
+                link: 'https://www.facebook.com/',
+                img: 'facebook.svg',
+                alt: 'facebook icon'
+            },
+            {
+                id: 3,
+                link: 'https://twitter.com/home',
+                img: 'twitter.svg',
+                alt: 'twitter icon'
+            },
+            {
+                id: 4,
+                link: 'https://www.youtube.com/',
+                img: 'youtube.svg',
+                alt: 'youtube icon'
+            },
+        ]
+    }
 
 }
 

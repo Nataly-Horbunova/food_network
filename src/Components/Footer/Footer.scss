@@ -1,0 +1,99 @@
+@import "../../styles/variables";
+@import "../../styles/mixins_and_placeholders";
+
+.footer {
+  margin-top: 70px;
+  background-color: #252525;
+  padding: clamp(40px, calc(110 / 1400 * 100vw), 110px) 0;
+
+  .container {
+    @include flex(space-between, flex-start, 30px);
+
+    .footer-contact-and-logo {
+      @include flex(space-between, flex-start, 20px, column);
+      flex-basis: 35%;
+
+
+      .footer-logo {
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        img {
+          display: block;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .footer-email, .footer-phone {
+        @extend %footer;
+      }
+
+      .footer-socials-list {
+        @include flex(space-between, flex-start, 16px);
+
+        .footer-socials-item {
+          width: 21px;
+          height: 21px;
+          transition: 0.2s ease-in;
+
+          &:hover{
+            transform: scale(1.1);
+          }
+
+          .footer-socials-link, .footer-socials-link img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .footer-nav {
+      width: 100%;
+      flex-basis: 65%;
+
+      .footer-nav-sections-list {
+        @include flex(space-between, flex-start, 30px);
+        flex-wrap: wrap;
+
+        .footer-nav-section {
+          .footer-nav-tittle {
+            font-family: 'Philosopher', sans-serif;
+            font-size: $fz-m;
+            line-height: $lh-m;
+            font-weight: 700;
+            color: $secondary-text-color;
+            opacity: 0.7;
+          }
+
+          .footer-nav-list {
+            margin-top: 14px;
+            @include flex(space-between, flex-start, 4px, column);
+
+            .footer-nav-item {
+
+              a {
+                @extend %footer;
+                transition: 0.2s ease-in;
+
+                &:hover {
+                  @extend %menu-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .container {
+      flex-direction: column;
+    }
+  }
+}
