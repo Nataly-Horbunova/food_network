@@ -2,8 +2,8 @@
 @import "../../styles/variables";
 
 .section-features {
-  margin-top: -20;
-  padding-top: 90px;
+  margin-top: 80px;
+
 
   .container {
     @include flex(space-between, center, null, column);

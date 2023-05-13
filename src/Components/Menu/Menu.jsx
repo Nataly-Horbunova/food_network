@@ -11,7 +11,7 @@ function Menu({menu}) {
 
 
     return (
-        <section className="section-menu" id={menu.id}>
+        <section className="section-menu">
             <div className="container">
                 <h2 className="section-tittle">{menu.tittle}</h2>
                 <h3 className="section-heading ">{menu.heading}</h3>

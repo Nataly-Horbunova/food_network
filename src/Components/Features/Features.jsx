@@ -3,7 +3,7 @@ import FeaturesList from "./FeaturesList";
 
 const Features = ({features}) => {
     return (
-        <section className="section-features" id={features.id}>
+        <section className="section-features">
             <div className="container">
                 <h2 className="section-tittle">{features.tittle} </h2>
                 <h3 className="section-heading">{features.heading}</h3>

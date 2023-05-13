@@ -2,7 +2,7 @@
 
 .section-about {
   margin-top: -20px;
-  padding-top: 90px;
+  padding-top: 50px;
 
   .container {
     @include flex(space-between, center, clamp(40px, calc(80 / 1400 * 100vw), 80px));

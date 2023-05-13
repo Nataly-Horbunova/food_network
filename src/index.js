@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './Components/App';
 import {data} from "./data/data";
+import {BrowserRouter} from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App data = {data}/>
+    <BrowserRouter>
+        <App data = {data}/>
+    </BrowserRouter>
+
 );

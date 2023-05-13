@@ -1,7 +1,7 @@
 import './About.scss';
 function About({about}) {
     return(
-        <section className="section-about" id={about.id}>
+        <section className="section-about" >
             <div className="container">
                 <div className="section-about-img-wrapper" data-aos="fade-right"  data-aos-delay="500">
                     <img src={require(`../../assets/${about.img}`)} alt="woman_eating"

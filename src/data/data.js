@@ -1,12 +1,10 @@
 export const data = {
     header: {
         navList: [
-            {id: 1, name: 'Home', link: '#'},
-            {id: 2, name: 'About us', link: '#about'},
-            {id: 3, name: 'Menu', link: '#menu'},
-            {id: 4, name: 'Features', link: '#features'},
-            {id: 5, name: 'Contact', link: '#contact'},
-
+            {id: 1, name: 'Home', route: '/'},
+            {id: 2, name: 'About us', route: '/about'},
+            {id: 3, name: 'Menu', route: '/menu'},
+            {id: 4, name: 'Contact', route: '/contact'},
         ],
         button: {
             name: "Register / Login",
@@ -26,7 +24,6 @@ export const data = {
     },
 
     featuresSection: {
-        id: 'features',
         tittle: 'features',
         heading: 'Food With A New Passion',
         cards: [
@@ -55,7 +52,6 @@ export const data = {
     },
 
     aboutSection: {
-        id: 'about',
         tittle: 'About us',
         heading: 'Eat Well, Live Well: Our Philosophy on Food and Health',
         description: 'There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also equipment  make your marketing plane Effective.',
@@ -68,7 +64,6 @@ export const data = {
     },
 
     menuSection: {
-        id: 'menu',
         tittle: 'menu',
         heading: 'Food Full of treaty Love',
         description: 'There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers.',
@@ -188,7 +183,6 @@ export const data = {
     },
 
     contactSection: {
-        id: 'contact',
         tittle: 'Contact',
         heading: 'Stay updated with our latest promotions and news by subscribing to our newsletter.',
         placeholder: 'Enter your email',

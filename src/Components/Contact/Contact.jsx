@@ -2,7 +2,7 @@ import './Contact.scss';
 
 function Contact({contact}) {
     return (
-        <section className="section-contacts" id={contact.id}>
+        <section className="section-contacts">
             <div className="container">
                 <iframe className='contact-map'
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24354.803180221617!2d18.034730164301788!3d40.26796592365616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1344274b633b5e53%3A0xc70ec625ec9e1d8b!2sFood%20imperiale!5e0!3m2!1sen!2sua!4v1683582926985!5m2!1sen!2sua"

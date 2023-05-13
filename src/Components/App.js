@@ -9,6 +9,7 @@ import Footer from './Footer/Footer';
 import {useEffect} from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {Routes, Route} from "react-router-dom";
 
 
 function App({data}) {
@@ -20,11 +21,13 @@ function App({data}) {
         <div className="App">
             <Header header={data.header}/>
             <main className='main'>
-                <Hero hero={data.heroSection} />
-                <Features features={data.featuresSection}/>
-                <About about={data.aboutSection}/>
-                <Menu menu={data.menuSection}/>
-                <Contact contact={data.contactSection}/>
+                <Routes>
+                    <Route path='/' element={<Hero hero={data.heroSection} />}/>
+                    <Route path="/about" element={ <About about={data.aboutSection}/>}/>
+                    <Route path="/menu" element={<Menu menu={data.menuSection}/>}/>
+                    <Route path="/contact" element={ <Contact contact={data.contactSection}/>}/>
+                </Routes>
+               <Features features={data.featuresSection}/>
             </main>
             <Footer footer={data.footer}/>
         </div>
