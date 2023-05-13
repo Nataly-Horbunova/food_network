@@ -14,7 +14,7 @@ const Header = ({header}) => {
         <header className="header">
             <div className="container">
                 <div className="logo-and-nav-wrapper">
-                    <NavLink to="/food_network" className="logo">
+                    <NavLink to="/" className="logo">
                         <img src={require(`../../assets/${header.logo}`)} alt="logo" data-aos="flip-left"
                              data-aos-duration="1500" data-aos-delay="800"/>
                     </NavLink>

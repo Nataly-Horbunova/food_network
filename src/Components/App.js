@@ -22,10 +22,10 @@ function App({data}) {
             <Header header={data.header}/>
             <main className='main'>
                 <Routes>
-                    <Route path='/food_network' element={<Hero hero={data.heroSection} />}/>
-                    <Route path="/food_network/about" element={ <About about={data.aboutSection}/>}/>
-                    <Route path="/food_network/menu" element={<Menu menu={data.menuSection}/>}/>
-                    <Route path="/food_network/contact" element={ <Contact contact={data.contactSection}/>}/>
+                    <Route path='/' element={<Hero hero={data.heroSection} />}/>
+                    <Route path="/about" element={ <About about={data.aboutSection}/>}/>
+                    <Route path="/menu" element={<Menu menu={data.menuSection}/>}/>
+                    <Route path="/contact" element={ <Contact contact={data.contactSection}/>}/>
                 </Routes>
                <Features features={data.featuresSection}/>
             </main>
