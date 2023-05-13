@@ -1,7 +1,7 @@
 export const data = {
     header: {
         navList: [
-            {id: 1, name: 'Home', route: '/'},
+            {id: 1, name: 'Home', route: ''},
             {id: 2, name: 'About us', route: '/about'},
             {id: 3, name: 'Menu', route: '/menu'},
             {id: 4, name: 'Contact', route: '/contact'},

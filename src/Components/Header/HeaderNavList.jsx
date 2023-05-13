@@ -7,7 +7,7 @@ const HeaderNavList = ({navList}) => {
                 navList.map(item => {
                     return (
                         <li className="header-nav-item" key={item.id}>
-                            <NavLink to={item.route} className="header-nav-link">{item.name}</NavLink>
+                            <NavLink to={`/food_network${item.route}`} className="header-nav-link">{item.name}</NavLink>
                         </li>
                     )
                 })
