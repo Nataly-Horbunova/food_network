@@ -61,7 +61,7 @@
             }
           }
 
-          &:first-child a {
+          & a.active {
             color: $main-color;
           }
         }

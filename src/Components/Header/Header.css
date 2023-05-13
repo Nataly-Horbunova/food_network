@@ -59,7 +59,7 @@
   color: inherit;
   transition: 0.2s ease-in;
 }
-.header .logo-and-nav-wrapper .header-nav-list .header-nav-item:first-child a {
+.header .logo-and-nav-wrapper .header-nav-list .header-nav-item a.active {
   color: #DC780B;
 }
 
