@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/food_network/static/css/main.993828a8.css",
+    "main.css": "/food_network/static/css/main.5e287a58.css",
     "main.js": "/food_network/static/js/main.f857dc7e.js",
     "static/media/peach_melba_dish.png": "/food_network/static/media/peach_melba_dish.b3bd10d0932cc9c71d07.png",
     "static/media/delmonico_steak_dish.png": "/food_network/static/media/delmonico_steak_dish.eeabc05ded9b6a11e8fa.png",
@@ -30,11 +30,11 @@
     "index.html": "/food_network/index.html",
     "static/media/star_active.svg": "/food_network/static/media/star_active.f677c5e07a4d68e50c42c1187fd2c993.svg",
     "static/media/star_disabled.svg": "/food_network/static/media/star_disabled.80d196937fd39310fa014e87fb617c00.svg",
-    "main.993828a8.css.map": "/food_network/static/css/main.993828a8.css.map",
+    "main.5e287a58.css.map": "/food_network/static/css/main.5e287a58.css.map",
     "main.f857dc7e.js.map": "/food_network/static/js/main.f857dc7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.993828a8.css",
+    "static/css/main.5e287a58.css",
     "static/js/main.f857dc7e.js"
   ]
 }
